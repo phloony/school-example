@@ -1,0 +1,11 @@
+# Application
+Django==3.2.12
+psycopg2-binary==2.8.6
+djangorestframework==3.13.1
+django-filter==21.1
+pyyaml==5.4.1
+uritemplate==3.0.1
+
+# Tests
+coverage==5.5
+pytest==6.2.4
