@@ -51,7 +51,7 @@ Feito isso, a aplicação estará rodando localmente (padrão porta 8000)
 
 # Documentação Swagger
 
-Para facilitar a compreensão dos endpoits disponíveis, a página inicial da aplicação já contém o que pode ser acessado e o formado esperado na forma de uma simples documentação Swagger.
+Para facilitar a compreensão dos endpoits disponíveis, a página inicial da aplicação já contém o que pode ser acessado e o formato esperado na forma de uma simples documentação Swagger, já com os campos possíveis de serem filtrados.
 
 Dividi o projeto em duas apps distintas (Students e Classes), com o intuito de que estaria aberto a ser desenvolvidos diversas funções específicas mantendo a organização
 
@@ -59,3 +59,8 @@ O setor "Schemas" exibe os campos e seus tipos esperados pelos endpoints
 
 ![image](https://user-images.githubusercontent.com/51096623/155822985-d5b536e3-0348-42a2-abe8-08c04c99a6c1.png)
 
+
+## Melhorias já observadas
+
+- Por se tratar de um exemplo/amostra, os campos e modelos de dados estão simples e não muito bem pensados, principalmente no quesito aulas/notas;
+- Pelo mesmo motivo ainda não foi adicionado gerenciamento de permissões e usuário logado.
