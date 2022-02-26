@@ -37,7 +37,7 @@ focado no uso de APIs
 6. Execute os testes e verificar a cobertura
 
     ```bash
-    docker-compose run --rm web pytest . --cov-report=term
+    docker-compose run --rm web pytest
     ```
 
 7. Para executar a aplicação
