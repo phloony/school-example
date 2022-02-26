@@ -34,10 +34,28 @@ focado no uso de APIs
     docker-compose run --rm web python app/manage.py loaddata app/initial_sample.json
     ```
 
-6. Para executar a aplicação
+6. Execute os testes e verificar a cobertura
+
+    ```bash
+    docker-compose run --rm web pytest . --cov-report=term
+    ```
+
+7. Para executar a aplicação
 
     ```bash
     docker-compose run --rm --service-ports web
     ```
 
 Feito isso, a aplicação estará rodando localmente (padrão porta 8000)
+
+
+# Documentação Swagger
+
+Para facilitar a compreensão dos endpoits disponíveis, a página inicial da aplicação já contém o que pode ser acessado e o formado esperado na forma de uma simples documentação Swagger.
+
+Dividi o projeto em duas apps distintas (Students e Classes), com o intuito de que estaria aberto a ser desenvolvidos diversas funções específicas mantendo a organização
+
+O setor "Schemas" exibe os campos e seus tipos esperados pelos endpoints
+
+![image](https://user-images.githubusercontent.com/51096623/155822985-d5b536e3-0348-42a2-abe8-08c04c99a6c1.png)
+
