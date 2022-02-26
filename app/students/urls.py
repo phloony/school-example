@@ -13,7 +13,7 @@ app_name = "students"
 router = routers.DefaultRouter()
 
 router.register(r"parents", ParentViewSet)
-router.register(r"students", StudentViewSet)
+router.register(r"students", StudentViewSet, 'students')
 router.register(r"student_classes", StudentClassViewSet)
 router.register(r"student_parents", StudentParentViewSet)
 

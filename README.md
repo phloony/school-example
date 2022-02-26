@@ -34,13 +34,26 @@ focado no uso de APIs
     docker-compose run --rm web python app/manage.py loaddata app/initial_sample.json
     ```
 
-6. Execute os testes e verificar a cobertura
+6. Executar os testes e verificar a cobertura
 
     ```bash
-    docker-compose run --rm web pytest
+    docker-compose run --rm web coverage run app/manage.py test students classes
     ```
 
-7. Para executar a aplicação
+7. Obter o reporte dos testes e verificar a cobertura
+
+    ```bash
+    docker-compose run --rm web coverage report
+    ```
+
+    Também é possível gerar um html para melhor visualização com o comando (ficará salvo por padrão na pasta htmlcov):
+
+    ```bash
+    docker-compose run --rm web coverage html
+    ```
+    Para visualizar é só abrir o arquivo htmlcov/index.html
+
+8. Para executar a aplicação
 
     ```bash
     docker-compose run --rm --service-ports web
@@ -62,5 +75,5 @@ O setor "Schemas" exibe os campos e seus tipos esperados pelos endpoints
 
 ## Melhorias já observadas
 
-- Por se tratar de um exemplo/amostra, os campos e modelos de dados estão simples e não muito bem pensados, principalmente no quesito aulas/notas;
+- Por se tratar de um exemplo/amostra, os campos e modelos de dados estão simples e não muito elaborados, principalmente no quesito aulas/notas;
 - Pelo mesmo motivo ainda não foi adicionado gerenciamento de permissões e usuário logado.
