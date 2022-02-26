@@ -3,14 +3,14 @@
 Esse projeto tem o objetivo de simular um sistema escolar simples
 focado no uso de APIs
 
-# Instalando ambiente de dev
+# Instalando ambiente de desenvolvimento
 
 - Necessário ter docker e docker-compose instalado.
 
 1. Crie um arquivo **.env** com base no .env-sample.
-    O sample já possui os dados para funcionar em desenvolvimento.
+    O sample já possui os dados utilizados para funcionar em desenvolvimento.
 
-2. Faça um build na imagem docker
+2. Faça o build da imagem docker
 
     ```bash
     docker-compose build
