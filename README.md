@@ -1,4 +1,4 @@
-# School Sample
+# School Example
 
 Esse projeto tem o objetivo de simular um sistema escolar simples
 focado no uso de APIs
